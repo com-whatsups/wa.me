@@ -1,16 +1,12 @@
-let timer = 3;
-const countdown = document.getElementById('timer');
-const adsterraLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
+const redirectLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
+let time = 3;
+const timerEl = document.getElementById("timer");
 
 const interval = setInterval(() => {
-  timer--;
-  countdown.textContent = timer;
-  if (timer <= 0) {
+  time--;
+  timerEl.textContent = time;
+  if(time <= 0){
     clearInterval(interval);
-    redirectNow();
+    window.location.href = redirectLink;
   }
 }, 1000);
-
-function redirectNow() {
-  window.location.href = adsterraLink;
-}
