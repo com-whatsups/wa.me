@@ -1,4 +1,4 @@
-let timer = 3;
+let timer = 1;
 const countdown = document.getElementById('timer');
 const adsterraLink = "https://www.revenuecpmgate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
 
