@@ -1,16 +1,86 @@
-let timer = 10;
-const countdown = document.getElementById('timer');
-const adsterraLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
 
-const interval = setInterval(() => {
-    timer--;
-    countdown.textContent = timer;
-    if (timer <= 0) {
-        clearInterval(interval);
-        redirectNow();
-    }
-}, 1000);
+body {
+  background: url("https://ik.imagekit.io/sodejjlov/asian.gif") no-repeat center center fixed;
+  background-size: cover;
+  color:#fff;
+  text-align:center;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+}
 
-function redirectNow() {
-    window.location.href = adsterraLink;
+.container {
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size:20px;
+  margin-bottom:5px;
+  text-shadow:0 0 8px #fff700;
+}
+
+.countdown {
+  font-size:14px;
+  margin-bottom:10px;
+  color:#fff700;
+  text-shadow:0 0 6px #fff700;
+}
+
+.item {
+  background:rgba(17,17,17,0.9);
+  border-radius:8px;
+  padding:10px;
+  margin:10px 0;
+}
+
+.avatar {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+.title {
+  font-size:14px;
+  font-weight:bold;
+  margin:6px 0 3px;
+  color:#fff;
+}
+
+.desc {
+  font-size:12px;
+  color:#ccc;
+  margin-bottom:6px;
+}
+
+button {
+  background:#fff700;
+  color:#000;
+  border:none;
+  padding:8px 12px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover {
+  background:#e6d200;
+}
+
+.sticky-bar {
+  margin-top:12px;
 }
