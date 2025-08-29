@@ -1,103 +1,16 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+let timer = 3;
+const countdown = document.getElementById('timer');
+const adsterraLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
 
-body {
-    background: url("https://ik.imagekit.io/sodejjlov/a02d9bf22d3be3c5ad656b761e7e1edc.gif?updatedAt=1756329405854") no-repeat center center fixed;
-    background-size: cover;
-    color:#fff;
-    text-align:center;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    padding:10px;
-    max-width:480px;     /* biar pas tampilan ponsel */
-    margin:auto;
-    overflow-y:auto;     /* <<< scroll vertikal */
-}
+const interval = setInterval(() => {
+  timer--;
+  countdown.textContent = timer;
+  if (timer <= 0) {
+    clearInterval(interval);
+    redirectNow();
+  }
+}, 1000);
 
-h1 {
-    font-size:18px;
-    margin-bottom:5px;
-    text-shadow:0 0 8px #fff700;
-}
-
-.countdown {
-    font-size:14px;
-    margin-bottom:12px;
-    color:#fff700;
-    text-shadow:0 0 6px #fff700;
-}
-
-.list-wrapper {
-    display:flex;
-    flex-direction:column; /* vertikal */
-    gap:14px;
-    padding-bottom:80px;   /* biar gak ketutup sticky bar */
-}
-
-.item {
-    background:rgba(0,0,0,0.65);
-    border-radius:10px;
-    padding:12px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    box-shadow:0 0 10px rgba(0,0,0,0.5);
-}
-
-.avatar {
-    width:100%;
-    max-width:300px;
-    height:170px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-.title {
-    font-size:14px;
-    font-weight:bold;
-    margin:6px 0 2px;
-    color:#fff;
-}
-
-.desc {
-    font-size:12px;
-    color:#ccc;
-    margin-bottom:6px;
-}
-
-button {
-    background:#fff700;
-    color:#000;
-    border:none;
-    padding:8px 12px;
-    border-radius:6px;
-    font-size:13px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:0.2s;
-}
-
-button:hover {background:#e6d200;}
-
-.sticky-bar {
-    background:rgba(0,0,0,0.9);
-    padding:10px;
-    display:flex;
-    justify-content:center;
-    position:fixed;   /* <<< fixed biar selalu muncul */
-    bottom:0;
-    left:0;
-    width:100%;
-}
-
-.sticky-bar button {
-    font-size:15px;
-    padding:10px 16px;
-    border-radius:8px;
+function redirectNow() {
+  window.location.href = adsterraLink;
 }
