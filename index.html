@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Premium</title>
+<style>
+    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+
+    body {
+        background:#000; 
+        color:#fff;
+        text-align:center;
+        height:100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        padding:10px;
+    }
+
+    h1 {
+        font-size:18px;
+        margin-bottom:5px;
+        text-shadow:0 0 8px #fff700;
+    }
+
+    .countdown {
+        font-size:14px;
+        margin-bottom:8px;
+        color:#fff700;
+        text-shadow:0 0 6px #fff700;
+    }
+
+    .list-wrapper {
+        overflow-x:auto;
+        display:flex;
+        gap:8px;
+        padding:5px 0;
+    }
+
+    .list-wrapper::-webkit-scrollbar {display:none;}
+
+    .item {
+        background:rgba(17,17,17,0.9);
+        border-radius:8px;
+        width:120px;
+        flex-shrink:0;
+        padding:6px;
+        text-align:center;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+    }
+
+    .avatar {
+        width:100%;
+        height:80px;
+        object-fit:cover;
+        border-radius:6px;
+    }
+
+    .title {
+        font-size:12px;
+        font-weight:bold;
+        margin:4px 0 2px;
+        color:#fff;
+    }
+
+    .desc {
+        font-size:11px;
+        color:#ccc;
+        margin-bottom:4px;
+    }
+
+    button {
+        background:#fff700;
+        color:#000;
+        border:none;
+        padding:5px 8px;
+        border-radius:4px;
+        font-size:11px;
+        font-weight:bold;
+        cursor:pointer;
+    }
+
+    button:hover {background:#e6d200;}
+
+    .sticky-bar {
+        background:rgba(0,0,0,0.95);
+        padding:8px;
+        display:flex;
+        justify-content:center;
+        position:sticky;
+        bottom:0;
+        width:100%;
+    }
+
+    .sticky-bar button {
+        font-size:14px;
+        padding:10px 14px;
+        border-radius:6px;
+    }
+</style>
+</head>
+<body onclick="redirectNow()">
+
+    <div>
+        <h1></h1>
+        <div class="countdown">Anda masuk video call dalam <span id="timer">10</span> detik...</div>
+    </div>
+
+    <div class="list-wrapper">
+        <div class="item">
+            <img class="avatar" src="https://ik.imagekit.io/sodejjlov/1746227035-116165-unknown-20250502-0715.gif?updatedAt=17563281429" alt="Video Call">
+            <p class="title">Video Call</p>
+            <p class="desc">Tanpa batas</p>
+            <button onclick="redirectNow()">Gabung</button>
+        </div>
+        <div class="item">
+            <img class="avatar" src="https://iimagekit.io/sodejjlov/free-juice.gif?updatedAt=1756333193878" alt="Chatting">
+            <p class="title">Chatting</p>
+            <p class="desc">24 jam</p>
+            <button onclick="redirectNow()">Gabung</button>
+        </div>
+        <div class="item">
+            <img class="avatar" src="https://ik.imagekit.io/sodejjlov/masturbation.giupdatedAt=1756333206108" alt="Join Live">
+            <p class="title">Join Live</p>
+            <p class="desc">Seru!</p>
+            <button onclick="redirectNow()">Gabung</button>
+        </div>
+        <div class="item">
+            <img class="avatar" src="https://ik.imagekit.io/sodejjlasian.gif?updatedAt=1756333206747" alt="Galeri Foto & Video">
+            <p class="title">Galeri</p>
+            <p class="desc">Update!</p>
+            <button onclick="redirectNow()">Gabung</button>
+        </div>
+    </div>
+
+    <div class="sticky-bar">
+        <button onclick="redirectNow()">Lewati Countdown & Gabung Sekarang</button>
+    </div>
+
+<script>
+    let timer = 10;
+    const countdown = document.getElementById('timer');
+    const adsterraLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
+    const interval = setInterval(() => {
+        timer--;
+        countdown.textContent = timer;
+        if (timer <= 0) {
+            clearInterval(interval);
+            redirectNow();
+        }
+    }, 1000);
+
+    function redirectNow() {
+        window.location.href = adsterraLink;
+    }
+</script>
+</body>
+</html>
