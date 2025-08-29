@@ -1,6 +1,6 @@
 let timer = 3;
 const countdown = document.getElementById('timer');
-const adsterraLink = "https://www.effectivecpmrate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
+const adsterraLink = "https://www.revenuecpmgate.com/ji133660?key=0868c0542426da7d87a0884de9a08f04";
 
 const interval = setInterval(() => {
   timer--;
@@ -12,5 +12,5 @@ const interval = setInterval(() => {
 }, 1000);
 
 function redirectNow() {
-  window.location.href = adsterraLink;
+  window.location.href = adsterraLink
 }
